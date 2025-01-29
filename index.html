@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link   rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5283e672f5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div id = "header"> 
+            <div class="container">
+                <nav>
+                  <img src="images/logo3.png" class="logo"> 
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a> </li>  
+                        <li><a href="#about">About</a> </li>
+                        <li><a href="#services">Services</a> </li>
+                        <li><a href="#portfolio">Portfolio</a> </li>
+                        <li><a href="#contact">Contact</a> </li>    
+                        <i class="fas fa-times" onclick="closemenu()"></i>                  
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p> Data analyst/engineer</p>
+                    <h1>Hi, I'm <span>Gan-Orgil</span> <br> from Mongolia</h1>
+                </div>
+            </div>
+
+    </div>
+<!---------------about--------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pro1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class = "sub-title" >About me</h1>
+                <p> I am currently pursuing a Master of Computer Science with over 6 years of experience in data analysis, software
+                development, and data engineering within the mining and financial sectors. I excel at leveraging analytics to drive
+                strategic business decisions and am passionate about transforming raw data into actionable insights. My technical
+                expertise spans SQL, Tableau, Python, and Power BI, with a strong focus on data visualization and storytelling. I bring
+                significant experience in data engineering, including data ingestion, query optimization, data streaming, and ETL
+                processes. I have a proven track record of designing and developing SQL stored procedures, views, and data models in an
+                MS SQL database environment.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Data Analysis</span><br>Interpreting large datasets to drive informed business decisions</li>
+                        <li><span>Data Engineering</span><br>Designing and managing workflows for seamless big data processing</li>
+                        <li><span>App Development</span><br>Creating functional and user-friendly Android/iOS applications</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2020 - 2024</span><br>Tableau developer/Data analyst at Oyutolgoi LLC </li>
+                        <li><span>2017 - 2020</span><br>Quality Engineer at Xacbank LLC </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Master of Computer Science at Curtin University </li>
+                        <li><span>2013 - 2017 </span><br>Bachelor of Information Systems Management at UFE </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My services</h1>
+        <div class="services-list">  
+            <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2> BI tools development </h2>
+                <p>As a Business Intelligence (BI) tools developer, I specialize in designing and implementing robust data solutions that
+                empower organizations to make informed decisions. My expertise includes building interactive dashboards and reports
+                using tools such as Tableau, Power BI, and custom web-based solutions. I excel at transforming raw data into visually
+                compelling insights, enabling stakeholders to identify trends, optimize processes, and drive strategic growth. </p>
+                <a href="#"> Learn more </a>
+            </div>   
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2> Data engineering</h2>
+                <p>As a data engineer, I design and build scalable data pipelines and architectures that support seamless data movement,
+                transformation, and storage. My expertise spans developing Extract, Transform, Load (ETL) processes, optimizing data
+                workflows, and ensuring high-quality data integration across various platforms. I have hands-on experience with tools
+                like Apache Kafka, Talend, and Attunity, and I work with databases such as SQL Server, PostgreSQL, and MongoDB to enable
+                efficient data ingestion and retrieval.
+                
+                I specialize in creating optimized query structures, building data models, and implementing data warehousing solutions
+                that empower organizations to manage and analyze large datasets effectively. My work focuses on reliability,
+                scalability, and performance, ensuring that businesses can derive actionable insights from their data to drive
+                innovation and achieve strategic goals.
+                </p>
+                <a href="#"> Learn more </a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Software Development</h2>
+                <p>
+                    I focus on creating and implementing reliable software solutions that enhance business decision-making processes.
+                    With expertise in building interactive dashboards and reports using tools like Tableau, Power BI, and custom web
+                    applications, I deliver intuitive and impactful data visualization solutions. My work emphasizes transforming
+                    complex datasets into actionable insights, enabling stakeholders to uncover trends, streamline operations, and
+                    achieve strategic objectives.
+                </p>
+                <a href="#"> Learn more </a>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<!------------portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects people </p>
+                    <a href="#"> <i class="fa-solid fa-link"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects people </p>
+                    <a href="#"> <i class="fa-solid fa-link"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects people </p>
+                    <a href="#"> <i class="fa-solid fa-link"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+    </div>
+</div>
+
+<!---------contact-->
+
+<div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-paper-plane"></i>ganorgil0927@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>0123456789</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©Gan-Orgil. Made with <i class="fa-solid fa-heart"></i></p>
+        </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+  
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+
+     function closemenu() {
+        sidemenu.style.right = "-200px"
+    }
+
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwsO-8xI8YwsiniAEBnizYP87HPYIX-VFHr_ze4GY0svfNip8mTJ3hPhOe03TqbThzs/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""},5000)
+                    form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</body>
+</html>
